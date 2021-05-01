@@ -1,0 +1,18 @@
+{% extends "home/base.html" %}
+ {% load static %}
+  {% block body_block %}
+    <div class="container">
+        <h1>Fill the form</h1><br>
+        <form action="{% url 'home:user_login' %}" method="POST">
+            {% csrf_token %}
+            <label for="username">Username:</label>
+            <input type="text" name="username" placeholder="Enter Username">
+
+            <label for="password">Password:</label>
+            <input type="password" name="password">
+
+            <input class="btn btn-primary" type="submit" value="Login">
+        </form>
+        
+    </div>
+  {% endblock %}

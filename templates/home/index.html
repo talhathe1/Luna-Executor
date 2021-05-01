@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends "home/base.html" %}
+{% load static %}
+{% block body_block %}
+    <div class="container">
+       <div class="jumbotron">
+           <h1 id="bob">To Fill out the Form</h1>
+            <h3>Visit formpage/</h3>
+            <h3>{{ age|cut:'6' }}</h3>
+            <h3>{{ name }}</h3>
+       </div>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, blanditiis vitae doloribus id obcaecati vero fugit quos unde sint voluptatibus neque, harum molestias? Optio iure reiciendis quidem veritatis voluptate possimus!</p>
+    </div>
+{% endblock %}
